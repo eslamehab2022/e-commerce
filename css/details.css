@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@500&family=Poppins:ital,wght@0,500;0,700;1,600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*----------------start globale-------------*/
+:root {
+  --main-color: #0e5aa7;
+  --ALT-color: #04386d;
+  --some-color: red;
+  --shadwo--: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contant h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.contant p {
+  padding: 10px 0px;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+}
+.contant h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--some-color);
+}
+select {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1;
+}
+.contant{
+  padding: 85px 0px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="cs.css" />
+    <title>shopfiy</title>
+  </head>
+
+  <body>
+    <!----st----header---->
+
+    <header>
+      <nav class="navbar navbar-expand-lg mb-5 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><strong>E</strong> shopfiy</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2">
+              <li class="nav-item links">
+                <a class="nav-link" href="sign up.html">sign up</a>
+              </li>
+              <li class="nav-item links">
+                <a class="nav-link" href="sign in.html">sign in</a>
+              </li>
+              <li class="nav-items colaction">
+                <a class="nav-link" id="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item shopping_icon" id="shopping_icon">
+                <i class="fa-solid fa-cart-shopping sh_icons" id="iteam_carts">
+                  <div class="added" id="added"></div>
+                </i>
+              </li>
+
+              <li class="nav-item colaction">
+                <a class="nav-link" href="#" id="logout">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!---fav carts-->
+      <div class="fav" id="fav">
+        <div class="cart_1">
+          <div>
+            <h6>E commerce</h6>
+          </div>
+          <div><i class="fa-solid fa-xmark" id="close_fav"></i></div>
+        </div>
+
+        <!---fav carts-->
+        <div class="container-fluid">
+          <div class="col" id="test"></div>
+        </div>
+      </div>
+      <!---fav carts-->
+    </header>
+    <!----EN----header---->
+
+    <!------st---showing_product --->
+    <section>
+      <div class="container" id="showing_product">
+        <div class="nav-item search my-5 me-auto">
+          <input
+            type="text"
+            class="form-control search"
+            placeholder="search proudacts"
+            id="search_bar"
+          />
+        </div>
+
+        <div class="row" id="rowdate">
+          <!--
+
+<div class="all_product">
+<div class="img-product">
+  <img class="img-fluid" src="" alt="product">
+</div>
+
+<div class="descraption-product">
+  <h6> 
+   .</h6>
+   <span></span>
+  <p></p>
+
+</div>
+<div class="shop"><i class="fa-solid fa-square-plus"></i></div>
+
+</div>
+
+</div>
+-->
+
+          <!-------->
+        </div>
+      </div>
+    </section>
+    <!------st---showing_product --->
+
+    <!-------->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/date.js"></script>
+    <script src="es.js"></script>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@500&family=Poppins:ital,wght@0,500;0,700;1,600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*----------------start globale-------------*/
+:root {
+  --main-color: #0e5aa7;
+  --ALT-color: #04386d;
+  --some-color: red;
+  --shadwo--: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*---------------start navgation-------------*/
+.navbar {
+  background-color: var(--main-color);
+
+}
+.navbar-brand {
+  color: #fff !important;
+}
+.nav-item {
+  padding: 0 15px;
+}
+.nav-items {
+  text-transform: capitalize;
+}
+.nav-link {
+  color: #fff !important;
+  font-family: "Poppins", sans-serif;
+  font-family: 18px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  padding: 7px;
+  position: relative;
+  border-radius: 6px;
+
+}
+
+.nav-link:hover {
+  background-color: #fff;
+  color: var(--main-color) !important;
+}
+.colaction {
+  display: none;
+}
+
+.navbar-toggler i {
+  color: #fff !important;
+}
+.navbar-toggler:focus{
+  box-shadow: none !important;
+
+}
+
+@media screen and (max-width: 991px) {
+ .navbar-nav{
+
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+.navbar-nav .nav-link {
+  padding-left: 10px;
+}  
+}
+
+
+/*--------------shopping---cart------------------*/
+#shopping_icon {
+  transform: translateY(13px);
+  display: none;
+  cursor: pointer;
+}
+.sh_icons {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+}
+/*--------------shopping---cart----numbers---------*/
+.added {
+  width: 20px;
+  height: 20px;
+  max-width: 50px;
+  max-height: 50px;
+  background-color: var(--some-color);
+  position: absolute;
+  right: -11px;
+  top: -7px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  display: none;
+  text-align: center;
+  padding-top: 3px;
+  cursor: pointer;
+}
+.search {
+  --webkit-transition: all 0.7s;
+}
+/*--------------End navgation---------------------*/
+/*-------------start show proudacts-------------------*/
+#showing_product {
+  padding-top: 100px;
+}
+.all_product {
+  position: relative;
+  box-shadow: var(--shadwo--);
+  padding: 15px;
+  max-width: 250px;
+  margin: auto;
+  min-height: 400px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+.all_product img {
+  cursor: pointer;
+}
+.all_product:hover img {
+  transform: scale(1.1);
+}
+.all_product:hover {
+  transform: translatey(-10px);
+}
+.descraption-product {
+  padding: 0px 7px;
+  position: relative;
+}
+.descraption-product {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
+.descraption-product h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px !important;
+  font-weight: 600;
+}
+.descraption-product p {
+  color: red;
+}
+.img-product img {
+  min-width: 200px;
+  max-height: 200px;
+  transition: all 0.4s ease-in-out;
+}
+.shop {
+  color: var(--some-color);
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.all_product span {
+  font-size: 10px;
+}
+.all_product p {
+  padding-top: 20px;
+}
+/*--------------start fav proudacts----------*/
+
+.fav {
+  position: fixed;
+  width: 545px;
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--ALT-color);
+  top: 0;
+  right: -564px;
+  z-index: 9999;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  overflow: scroll;
+}
+.cart_1 {
+  background: var(--main-color);
+  color: #fff;
+  padding: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fav_proudacts {
+  color: #000;
+  margin: 10px 15px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: var(--shadwo--);
+}
+.fav_img img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.fav_desc {
+  position: relative;
+}
+.fav_desc h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+.fav_desc p {
+  color: var(--some-color);
+}
+/*------------close fav proudacts---------------*/
+
+#close_fav {
+  font-size: 20px;
+  color: var(--some-color);
+  background-color: #fff;
+  padding: 3px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#trash {
+  color: var(--some-color);
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 324px;
+  bottom: 20px;
+}
+
+.heartaa {
+  color: rgba(107, 107, 107, 0.388);
+}
+.list {
+  color: red;
+}
+
+.quntatiy{
+  position: relative;
+  background-color: var(--ALT-color);
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+}
+.qun{
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff !important;
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 480px) {
+ 
+ #trash{
+  left: 110px;
+  bottom: 2px;
+
+
+ }
+};
+
+ 
+
+
+
+
+/*--------------start slider bar---------------*/

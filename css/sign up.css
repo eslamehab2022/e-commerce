@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@500&family=Poppins:ital,wght@0,500;0,700;1,600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--ALT-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #0e5aa7;
+  --ALT-color: #04386d;
+}
+.form_section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 15px;
+  width: 900px;
+  max-width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+input[type="submit"] {
+  width: 150px;
+  margin: 25px auto;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(204, 14, 0);
+  border-radius: 15px;
+  padding: 8px;
+}
+.form_section span {
+  color: var(--main-color);
+}
+.form_section a {
+  text-decoration: none;
+  color: red;
+  margin-left: 11px;
+}
+
+#alerts {
+  display: none;
+  transition: 0.4s ease;
+}
+.nav-link:hover {
+  color: #09c;
+}
+
+.navbar-toggler i {
+  color: #fff !important;
+}
+.til {
+  text-align: center;
+  padding: 10px 0px;
+}
+.til h3,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .form_section {
+    position: absolute;
+    top: 75% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 15px;
+    width: 900px;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
